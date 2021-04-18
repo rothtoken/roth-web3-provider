@@ -1,0 +1,38 @@
+{
+  "name": "roth-web3-provider",
+  "version": "0.3.0",
+  "description": "roth Web3 Provider",
+  "main": "index.js",
+  "android": {
+    "dist": "../android/lib/src/main/res/raw/"
+  },
+  "scripts": {
+    "build": "rm -rf ../dist && parcel build index.js --no-source-maps -o roth-min.js -d ../dist",
+    "build:android": "rm -rf $npm_package_android_dist/roth.js && mkdir -pv $npm_package_android_dist && parcel build index.js --no-source-maps -o roth.js -d $npm_package_android_dist",
+    "watch": "rm -rf ../dist && parcel watch index.js -o roth-min.js -d ../dist",
+    "lint": "eslint . --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rothWallet/roth-web3-provider.git"
+  },
+  "keywords": [],
+  "author": "roth <support@rothwalletapp.com>",
+  "license": "MIT",
+  "dependencies": {
+    "buffer": "^5.6.0",
+    "events": "^3.2.0",
+    "isutf8": "^3.1.1",
+    "web3": "^0.20.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.12.4",
+    "lodash": "^4.17.20",
+    "ethereumjs-util": "^7.0.5"
+  }
+}

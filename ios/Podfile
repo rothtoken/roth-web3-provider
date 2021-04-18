@@ -1,0 +1,13 @@
+use_frameworks!
+platform :ios, '11.0'
+
+target 'rothWeb3Provider_Example' do
+  pod 'rothWeb3Provider', :path => '../'
+  pod 'rothWalletCore'
+  pod 'SwiftProtobuf'
+
+  target 'rothWeb3Provider_Tests' do
+    inherit! :search_paths
+
+  end
+end

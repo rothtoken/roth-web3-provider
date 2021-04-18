@@ -1,0 +1,32 @@
+PODS:
+  - SwiftProtobuf (1.14.0)
+  - rothWalletCore (2.5.1):
+    - rothWalletCore/Core (= 2.5.1)
+  - rothWalletCore/Core (2.5.1):
+    - rothWalletCore/Types
+  - rothWalletCore/Types (2.5.1):
+    - SwiftProtobuf
+  - rothWeb3Provider (0.4.0)
+
+DEPENDENCIES:
+  - SwiftProtobuf
+  - rothWalletCore
+  - rothWeb3Provider (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftProtobuf
+    - rothWalletCore
+
+EXTERNAL SOURCES:
+  rothWeb3Provider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftProtobuf: ed465ed18402f998fd117f631da27e0168e6b59c
+  rothWalletCore: a6faaf299efb739d6bebba451dd2fb975edba834
+  rothWeb3Provider: c4fd1102867679e39224abf4449748cb4bd2a3a3
+
+PODFILE CHECKSUM: 8983898624024172b19a1e0acdeeb4229d50f3fd
+
+COCOAPODS: 1.10.1
